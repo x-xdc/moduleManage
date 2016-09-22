@@ -3,7 +3,7 @@
     "main": [
       {
         "src": "../webroot-dev/main.js",
-        "dest": "/static/js/main/7631a78a4ce5c253e0a14897dcf8ffb1.js",
+        "dest": "/static/js/main/15f5e909346d94e3dcaca86ac53e3a0d.js",
         "deps": [
           "../webroot-dev/js/app/basic.js",
           "../webroot-dev/js/app/modes.js",
@@ -93,7 +93,7 @@
         ]
       },
       {
-        "dest": "/static/css/d097879a333aa8eb2db20d433db20f2a.css",
+        "dest": "/static/css/bbb69ea4e987e1ed34c3f1ebb02425d6.css",
         "deps": [
           {
             "src": "../webroot-dev/css/index.css",
