@@ -1,0 +1,114 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "coolie.js@^2.0.19",
+        "scope": null,
+        "escapedName": "coolie.js",
+        "name": "coolie.js",
+        "rawSpec": "^2.0.19",
+        "spec": ">=2.0.19 <3.0.0",
+        "type": "range"
+      },
+      "/Users/apple/Desktop/system/modelManage"
+    ]
+  ],
+  "_from": "coolie.js@>=2.0.19 <3.0.0",
+  "_id": "coolie.js@2.0.21",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/coolie.js",
+  "_nodeVersion": "4.4.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/coolie.js-2.0.21.tgz_1473478598222_0.1501711281016469"
+  },
+  "_npmUser": {
+    "name": "cloudcome",
+    "email": "cloudcome@163.com"
+  },
+  "_npmVersion": "2.14.20",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "coolie.js@^2.0.19",
+    "scope": null,
+    "escapedName": "coolie.js",
+    "name": "coolie.js",
+    "rawSpec": "^2.0.19",
+    "spec": ">=2.0.19 <3.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/coolie.js/-/coolie.js-2.0.21.tgz",
+  "_shasum": "80f88418cb0c890fd21fe405a25faddcc002746c",
+  "_shrinkwrap": null,
+  "_spec": "coolie.js@^2.0.19",
+  "_where": "/Users/apple/Desktop/system/modelManage",
+  "author": {
+    "name": "cloudcome",
+    "email": "cloudcome@163.com",
+    "url": "http://ydr.me"
+  },
+  "bin": {},
+  "bugs": {
+    "url": "https://github.com/cooliejs/coolie.js/issues"
+  },
+  "dependencies": {},
+  "description": "苦力 —— 前端模块加载，支持 CommonJS、CMD、AMD 规范。",
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-coverage": "^0.5.5",
+    "karma-coveralls": "^1.1.2",
+    "karma-jasmine": "^0.3.8",
+    "uglify-js": "^2.4.15"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "80f88418cb0c890fd21fe405a25faddcc002746c",
+    "tarball": "https://registry.npmjs.org/coolie.js/-/coolie.js-2.0.21.tgz"
+  },
+  "gitHead": "fcc99a08f73760e54d6ce175e36d702e0586187e",
+  "homepage": "https://github.com/cooliejs/coolie.js",
+  "keywords": [
+    "module loader",
+    "ydr.me",
+    "cloudcome",
+    "AMD",
+    "CMD",
+    "module",
+    "coolie",
+    "require.js",
+    "nodejs",
+    "commonJS",
+    "seajs"
+  ],
+  "license": "MIT",
+  "main": "coolie.js",
+  "maintainers": [
+    {
+      "name": "cloudcome",
+      "email": "cloudcome@163.com"
+    }
+  ],
+  "name": "coolie.js",
+  "optionalDependencies": {},
+  "peerDependencies": {},
+  "preferGlobal": false,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cooliejs/coolie.js.git"
+  },
+  "scripts": {
+    "live": "browser-sync start --config bs-config.js",
+    "min": "node ./node_modules/uglify-js/bin/uglifyjs ./coolie.js -cm --comments some -o ./coolie.min.js",
+    "prepublish": "npm test && npm run min",
+    "release": "node ./node_modules/uglify-js/bin/uglifyjs ./coolie.js -cm --comments some -o ./coolie.min.js && cp coolie.js ./release && cp coolie.min.js ./release && cd release && zip coolie.zip coolie.js coolie.min.js && alioss upload && rm -rf coolie.zip coolie.js coolie.min.js",
+    "test": "node ./node_modules/.bin/karma start karma.conf.js --single-run"
+  },
+  "version": "2.0.21"
+}
